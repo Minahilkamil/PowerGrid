@@ -1,0 +1,66 @@
+.table-wrap { overflow-x: auto; }
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .875rem;
+}
+
+.data-table thead {
+  background: #f8fafc;
+  border-bottom: 2px solid var(--border);
+}
+
+.data-table th {
+  padding: .85rem 1rem;
+  text-align: left;
+  color: #374151;
+  font-weight: 700;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  white-space: nowrap;
+}
+
+.data-table td {
+  padding: .85rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: var(--text);
+  vertical-align: middle;
+}
+
+.data-table tbody tr:last-child td { border-bottom: none; }
+
+.data-table tbody tr {
+  transition: background .15s;
+}
+
+.data-table tbody tr:hover { background: #f8fafc; }
+
+.empty-cell {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 3rem 1rem;
+  font-size: .875rem;
+}
+
+.table-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  flex-direction: column;
+  gap: .75rem;
+  color: var(--text-muted);
+  font-size: .875rem;
+}
+
+.spinner {
+  width: 32px; height: 32px;
+  border: 3px solid var(--border);
+  border-top-color: var(--primary-light);
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
