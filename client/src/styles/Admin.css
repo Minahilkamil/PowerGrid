@@ -1,0 +1,53 @@
+.admin-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.admin-meter-card {
+  grid-column: 1 / -1;
+  max-width: 680px;
+}
+
+.admin-grid .section-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-grid .section-card .btn {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .admin-main {
+    padding: 1.25rem;
+  }
+
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-meter-card {
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  .admin-grid .section-card .btn {
+    align-self: stretch;
+    width: 100%;
+  }
+}

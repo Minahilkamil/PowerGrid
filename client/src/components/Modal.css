@@ -1,0 +1,7 @@
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 500; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.modal-box { background: var(--surface); border-radius: var(--radius); width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,.2); max-height: 90vh; overflow-y: auto; }
+.modal-header { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border); }
+.modal-header h3 { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+.modal-close { background: none; border: none; font-size: 1.2rem; color: var(--text-muted); cursor: pointer; padding: .25rem; border-radius: 6px; }
+.modal-close:hover { background: var(--bg); }
+.modal-body { padding: 1.5rem; }
